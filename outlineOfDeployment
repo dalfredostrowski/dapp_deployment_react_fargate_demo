@@ -1,0 +1,17 @@
+
+
+Outline of Deployment of Docker image to AWS Fargate cluster
+
+* install react, node
+* create-react-app to create a new project
+* add two configuration files (default.conf,  Docker)
+* build / test Docker image
+* establisch ECR ( Elastic Container Registry )
+* Obtain IAM credentials to use AWS command line 
+* push docker image to ECR
+* Create Target Group (under EC2)  -- configure as "IP"
+* Create load balancer (under EC2)
+* (under ECS) create a task definition
+* start Fargate cluster
+* initiate service (tie in task definition)
+* test
